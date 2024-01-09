@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,100;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background:white;
+}
+
+ .icons{
+    color: rgb(96, 96, 96);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+
+}
+
+.header_left img{
+    width: 110px;
+    margin-left: 0.5rem;
+}
+
+.header i{
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.header_Search form{
+    border: 1px solid #ddd;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header_Search input{
+    width: 700px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    height: 100%;
+}
+
+.header_Search button{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+
+}
+.left-side{
+    flex-basis: 240px;
+    border-right: 1px solid rgba(113 119 114 /25%);
+    padding: 25px 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: o.5s;
+
+}
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+.side-menu a{
+    color: rgba(20, 8, 20, 0.667);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.side-wrapper * .side-wrapper{
+    margin-top: 20px;
+
+}
+ .side-menu a.active{
+    color: rgb(3, 3, 3);
+    background-color: whitesmoke;
+ }
+ .side-menu a:hover{
+    background-color: #999ba5;
+
+ }
+ .side-menu i{
+    width: 30px;
+    color:black;
+    margin-right: 8px;
+        
+    } 
+
+ .right-side{
+    width: 100%;
+    overflow: auto;
+ }
+ .main-header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(113 119 144 /25%);
+    height: 58px;
+    flex-shrink: 0;
+ }
+ .main-header .header-menu a{
+    padding: 8px 20px;
+    margin-left: 42px;
+    
+ }
+
+ .main-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+ }
+ .main-header-link{
+    color: rgba(20, 8, 20, 0.667);
+    border-radius: 50px;
+    background-color: #9c9898;
+    margin-right:5px;
+    transition: 0.3s;
+ }
+  .main-header-link.active,
+ .main-header-link:hover{
+   color: #1f1f1f;
+   background-color:  #fff;
+
+ }
+ .main.header.header-menu{
+   margin-left: 65px;
+ }
+
+
+ .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    color:lightblue;
+    padding: 0 40px;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(16 18 27 / 40%);
+    }
+
+    .videos{
+        background-color: #f9f9f9;
+        width: 100%;
+        height: 100%;
+        padding:15px;
+        border-top: 1px solid #ddd;
+        overflow-y: scroll;
+      }
+      .videos_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .video{
+        width:310px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 30px;
+      }
+      .video_thumbnail{
+        width: 100%;
+        height:170px;
+      }
+      .video_thumbnail img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+      .author img{
+        object-fit: cover;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+      }
+      .video_details{
+        display: flex;
+        margin-top:10px;
+      }
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+    }
+    .title h3{
+        color: rgb(3, 3, 3);
+        line-height: 18px;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    .title a, span{
+        text-decoration: none;
+        color: rgb(96, 96, 96);
+        font-size: 14px;
+    }
+
+    .youtubeAdBanner{
+        height: 300px;
+        width: 100%;
+        position: relative;
+       
+    }
+    img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
